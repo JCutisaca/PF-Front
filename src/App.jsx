@@ -30,6 +30,8 @@ import ProductsByCategory from "./components/ProductsByCategory/ProductsByCatego
 import Checkout from "./components/ShoppingCart/Checkout/Checkout";
 import setMenuBurger from "./redux/Actions/MenuBurger/setMenuBurger";
 
+import ChatBot from "./components/Chatbot/chatBot";
+
 const App = () => {
   const user = useSelector((state) => state.user);
   const dispatch = useDispatch();
@@ -110,6 +112,7 @@ const App = () => {
             <Route path="/compra" element={<PaymentState />} />
             <Route path="/preguntas-frecuentes" element={<QandA />} />
             <Route path="/nosotros" element={<About />} />
+            <Route path="/chatbot" element={<ChatBot />}></Route>
             <Route path="/recuperar-contrasena/" element={<RecoveryPassword />}>
               <Route path="codigo-requerido" element={<CodeRequirer />} />
             </Route>

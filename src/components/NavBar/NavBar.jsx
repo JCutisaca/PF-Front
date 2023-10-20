@@ -249,6 +249,18 @@ const NavBar = () => {
               Productos
             </button>
           </Link>
+          <Link to="/chatbot">
+            <button
+              className={
+                location.pathname === "/chatbot"
+                  ? "buttonLinkActive"
+                  : "navBarButton"
+              }
+              title="chatbot"
+            >
+              Chatbot
+            </button>
+          </Link>
           <Link to="/contacto">
             <button
               className={
