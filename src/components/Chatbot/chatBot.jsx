@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Button, TextField, Box } from "@mui/material";
-import { Link, NavLink } from "react-router-dom";
+import "./chatBot.css"
 
 const ChatBot = () => {
   const [messages, setMessages] = useState([]);
@@ -26,11 +26,25 @@ const ChatBot = () => {
       addMessage(message, true);
 
       switch (message.toLowerCase()) {
-        case "teléfono":
+        case "telefono":
             addMessage("Nuestro número de teléfono es 123-456-789. ¿En qué más puedo ayudarte?", false);
             break;
         case "hola":
-            addMessage("¡Hola! Soy LadyBot, tu asistente virtual. ¿En qué puedo ayudarte hoy?", false);
+            addMessage("¡Hola! Soy LadyBot, tu asistente virtual. ¿En qué puedo ayudarte hoy? Aquí hay algunas opciones que podrías probar:\n" +
+            "- Teléfono: Para obtener nuestro número de teléfono.\n" +
+            "- Hola: Para saludar y empezar la conversación.\n" +
+            "- Necesito ayuda: Para obtener asistencia personalizada.\n" +
+            "- Envíos: Para información sobre envíos y entrega.\n" +
+            "- Productos disponibles: Para conocer nuestra gama de productos.\n" +
+            "- Cómo realizar un pedido: Para obtener instrucciones sobre cómo comprar.\n" +
+            "- Métodos de pago: Para conocer los métodos de pago aceptados.\n" +
+            "- Tallas y guía de tallas: Para obtener información sobre tallas de productos.\n" +
+            "- Necesito información sobre el stock: Para verificar la disponibilidad de un producto específico.\n" +
+            "- Necesito la dirección del local: Para conocer nuestra dirección física.\n" +
+            "¿En qué más puedo ayudarte?", false);
+            break;
+        case "hola may":
+            addMessage("hola la puta q te pario!!!!!!", false);
             break;
         case "necesito ayuda":
             addMessage("Claro, estaré encantada de ayudarte. ¿Qué duda específica tienes sobre nuestros productos o servicios?", false);
@@ -85,39 +99,32 @@ const ChatBot = () => {
   };
 
   return (
-    <div>
-      <NavLink to="/" style={{ textAlign: "center", marginTop: "100px", display: "block" }}>
-      <h1>Hola soy ladyBot en que puedo ayudarte!!!</h1>
-        <Button variant="contained" color="primary" style={{ backgroundColor: "#ba338a" }}>
-          Inicio
-        </Button>
-      </NavLink>
+    <div className='chat-bot-container'>
       <Box
         sx={{
           width: "100%",
-          height: "90vh",
+          height: "60vh",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
           textAlign: "center",
           borderColor: "#ba338a",
-          marginTop: 10
+          marginTop: "25vh"
         }}
       >
         <Box
           sx={{
-            width: "80%",
-            maxWidth: 500,
-            
+            width: "90%",
+            maxWidth: 800,
             p: 2,
-            border: "1px solid #ccc",
+            border: "1px inset #ccc",
             borderRadius: 5,
-            marginBottom: 10,
+            marginBottom:"10vh",
             borderColor: "#ba338a",
           }}
         >
-          <div
+          <div className="div-render-chat"
             ref={chatContainerRef}
             style={{ height: "500px", overflowY: "auto", marginBottom: "10px" }}
           >
