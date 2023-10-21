@@ -127,7 +127,7 @@ const ChatBot = () => {
                 style={{
                   textAlign: message.isUser ? "right" : "left",
                   marginBottom: "10px",
-                  color: message.isUser ? "#ba338a" : "#E0B3D3",
+                  color: message.isUser ? "#ba338a" : "rgb(135 8 98)",
                 }}
                 >
                 {message.text}
