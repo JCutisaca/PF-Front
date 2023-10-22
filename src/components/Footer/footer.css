@@ -2,7 +2,20 @@
   /* bottom: 0; */
   flex-shrink: 0;
 }
-
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+}
+.svgDiv {
+  width: 100%;
+  height: min-content;
+}
+.svgDiv svg,
+.svgDiv path {
+  display: flex;
+  width: 100%;
+  height: 100% !important;
+}
 .footerBottom {
   display: flex;
   justify-content: center;
@@ -23,6 +36,7 @@
   justify-content: space-around;
   background-color: #e0b3d3;
   padding: 16px;
+  /* width: 100%; */
 }
 
 .footerTop a {
