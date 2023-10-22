@@ -5,10 +5,11 @@ import {
   EditOutlined,
   StarOutlined,
   HeartOutlined,
-  CommentOutlined, CustomerServiceOutlined 
+  CommentOutlined,
+  CustomerServiceOutlined,
 } from "@ant-design/icons";
 import { Layout, Menu, Button, theme, Table, FloatButton } from "antd";
-import {useMediaQuery} from 'react-responsive'
+import { useMediaQuery } from "react-responsive";
 import DataProfile from "../DataProfile/DataProfile";
 import CreateAcountForm from "../CreateAcountModal/CreateAcountForm";
 import ShoppingClient from "../ShoppingClient/ShoppingClient";
@@ -16,13 +17,12 @@ import ReviewsClient from "../ReviewsClient/ReviewsClient";
 import TableShoppingClient from "../TableShoppingClient/TableShoppingClient";
 import style from "./ProfileLayout.module.css";
 import { Formik, Form } from "formik";
-import {CreateAcountSchema} from "../CreateAcountModal/createAcountSchema";
+import { CreateAcountSchema } from "../CreateAcountModal/createAcountSchema";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router";
 import Favs from "../../views/Favs/Favs";
 import ProductFavs from "../ProductFavs/ProductFavs";
-
 
 const { Header, Sider, Content } = Layout;
 const ProfileLayout = ({ profileKey }) => {
@@ -42,7 +42,6 @@ const ProfileLayout = ({ profileKey }) => {
   });
 
   useEffect(() => {
-    
     if (infouser) {
       setFormData({
         id: infouser.id,
@@ -61,23 +60,23 @@ const ProfileLayout = ({ profileKey }) => {
         },
         pivotuser: true,
       });
-    }else if (!infouser.id){
-      return navigate("/")
+    } else if (!infouser.id) {
+      return navigate("/");
     }
   }, [infouser]);
   const [selectedKey, setSelectKey] = useState(profileKey);
   const {
     token: { colorBgContainer },
   } = theme.useToken();
-  const keySelect = ( access ) => {
+  const keySelect = (access) => {
     console.log(access);
     if (typeof access === "object") {
-      const {key}=access
-      navigate(`/perfil/${key}`)
+      const { key } = access;
+      navigate(`/perfil/${key}`);
       setSelectKey(key);
     } else {
       setSelectKey(access);
-      navigate(`/perfil/${access}`)
+      navigate(`/perfil/${access}`);
     }
   };
   const items = [
@@ -108,24 +107,28 @@ const ProfileLayout = ({ profileKey }) => {
     },
   ];
   return (
-    
-    <Layout className={style.containerInfo} style={{marginTop:80 }}>
-      <Sider style={{ display: isMobile ? 'none' : 'block' }}>
+    <Layout className={style.containerInfo} style={{ marginTop: 80 }}>
+      <Sider
+        style={{ display: isMobile ? "none" : "block", background: "white" }}
+      >
         <div className="demo-logo-vertical" />
         <Menu
           theme="light"
           mode="inline"
-          style={{ height: "80vh"}}
+          style={{ border: "none", background: "white", marginTop: "2em" }}
           defaultSelectedKeys={profileKey}
           onSelect={keySelect}
           items={items}
         />
       </Sider>
-      <Layout className={style.containerInfo}>
-        <Content className={style.layaout1}>
+      <Layout className={style.containerInfo} style={{ background: "white" }}>
+        <Content
+          className={style.layaout1}
+          style={{ background: "white", marginTop: "2em" }}
+        >
           {selectedKey === "perfil" && <DataProfile />}
           {selectedKey === "compras" && <ShoppingClient idUser={infouser.id} />}
-          {selectedKey === "favoritos" && <Favs/>}
+          {selectedKey === "favoritos" && <Favs />}
           {selectedKey === "compras" && <TableShoppingClient />}
           {selectedKey === "editar" && (
             <Formik
@@ -149,30 +152,29 @@ const ProfileLayout = ({ profileKey }) => {
               <div className={style.formSetting}>
                 <CreateAcountForm
                   pivotuser={dataUser.pivotuser}
-
                   idUser={dataUser.id}
                 />
               </div>
             </Formik>
           )}
-          {selectedKey === "opiniones" && <ReviewsClient infoUser={infouser}/>}
+          {selectedKey === "opiniones" && <ReviewsClient infoUser={infouser} />}
         </Content>
       </Layout>
       <FloatButton.Group
-      trigger="click"
-      type="primary"
-      style={{ right: 24,display: isLatop ? 'none' : 'block' }}
-      icon={<CustomerServiceOutlined />}
-
-    >
-      {items.map(item => (
-        <FloatButton key={item.key} icon={item.icon} label={item.label} onClick={() => keySelect(item.key)}>
-        
-        </FloatButton>
-      ))}
-     
-    </FloatButton.Group>
-    
+        trigger="click"
+        type="primary"
+        style={{ right: 24, display: isLatop ? "none" : "block" }}
+        icon={<CustomerServiceOutlined />}
+      >
+        {items.map((item) => (
+          <FloatButton
+            key={item.key}
+            icon={item.icon}
+            label={item.label}
+            onClick={() => keySelect(item.key)}
+          ></FloatButton>
+        ))}
+      </FloatButton.Group>
     </Layout>
   );
 };

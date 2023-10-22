@@ -3,7 +3,7 @@
     background-color: #F1ECF0;
     /* width: 88vw; */
     width: 98%;
-    height: 71vh;
+    /* height: 71vh; */
     display: grid;
     place-items: center;
     padding: 10px;
@@ -25,3 +25,4 @@
     height: 600px;
     padding: 10px;
 }
+
