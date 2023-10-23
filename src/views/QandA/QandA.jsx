@@ -2,7 +2,7 @@ import { Collapse } from "antd";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import LoginModal from "../../components/LoginModal/LoginModal";
-import "./QandA.css";
+import "./qAndA.css";
 import { useSelector } from "react-redux";
 import MenuBurger from "../../components/MenuBurger/MenuBurger";
 
