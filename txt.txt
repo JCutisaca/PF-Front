@@ -2,7 +2,8 @@
    {
       "name": "MUSCULOSA BODY",
       "image": "https://d22fxaf9t8d39k.cloudfront.net/e7932f7f83718e372db5316f598c872d4daacfd08d1e496e80a70112c821518a205310.jpg",
-      "price": 8400,
+      "description":"Prenda esencial para tus entrenamientos, brindando comodidad y libertad de movimiento. Su ajuste perfecto y alta elasticidad la hacen ideal para cualquier actividad, sin sacrificar estilo."
+      "price": 1,
       "sales": 0,
       "stock": [
         { "color": "red", "sizeAndQuantity": [{"size": "S", "quantity": 5}, {"size": "M", "quantity": 8}, {"size": "L", "quantity": 10}, {"size": "XL", "quantity": 7}] },
@@ -11,7 +12,20 @@
       ],
       "category": "MUSCULOSAS"
     },
-
+{
+        "name": "CALZA LADY ESSENTIAL",
+        "image": "https://acdn.mitiendanube.com/stores/001/073/712/products/3082-11-92824bc7f43ffda1ff16636886971618-640-0.jpg",
+        "description": "Prenda deportiva de alta calidad con Lycra, brinda comodidad, flexibilidad y resistencia. Ajuste perfecto, conserva forma original con elasticidad.",
+        "price": 1,
+        "priceOnSale": 0,
+        "unitsSold": 0,
+        "stock": [
+            { "color": "red", "sizeAndQuantity": [{ "size": "S", "quantity": 105 }, { "size": "M", "quantity": 108 }, { "size": "L", "quantity": 1010 }, { "size": "XL", "quantity": 107 }] },
+            { "color": "blue", "sizeAndQuantity": [{ "size": "S", "quantity": 106 }, { "size": "M", "quantity": 109 }, { "size": "L", "quantity": 1011 }, { "size": "XL", "quantity": 108 }] },
+            { "color": "gray", "sizeAndQuantity": [{ "size": "S", "quantity": 104 }, { "size": "M", "quantity": 107 }, { "size": "L", "quantity": 109 }, { "size": "XL", "quantity": 106 }] }
+        ],
+        "category": "CALZAS LARGAS"
+    },
    {
       "name": "VESTIDO DEPORTIVO FIT",
       "image": "https://m.media-amazon.com/images/I/61ByjCVWr1L._AC_UY1000_.jpg",
@@ -21,9 +35,10 @@
         { "color": "pink", "sizeAndQuantity": [{"size": "S", "quantity": 500}, {"size": "M", "quantity": 500}, {"size": "L", "quantity": 500}, {"size": "XL", "quantity": 500}] },
         { "color": "yellow", "sizeAndQuantity": [{"size": "S", "quantity": 6}, {"size": "M", "quantity": 9}, {"size": "L", "quantity": 11}, {"size": "XL", "quantity": 8}] },
         { "color": "gray", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
-	{ "color": "white", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
+        { "color": "white", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] }
       ],
-      "category": "VESTIDOS"
+      "category": "VESTIDOS",
+      "description": "Una combinación perfecta de estilo y comodidad para tus actividades deportivas y tu día a día. Confeccionado con materiales de alta calidad y un ajuste perfecto que realza tu figura. Disfruta de la libertad de movimiento y la frescura que este vestido deportivo ofrece, tanto en el gimnasio como en la calle."
     },
    {
       "name": "PANTALON DEPORTIVO WIDE LEG",
@@ -34,9 +49,10 @@
         { "color": "pink", "sizeAndQuantity": [{"size": "S", "quantity": 500}, {"size": "M", "quantity": 500}, {"size": "L", "quantity": 500}, {"size": "XL", "quantity": 500}] },
         { "color": "yellow", "sizeAndQuantity": [{"size": "S", "quantity": 6}, {"size": "M", "quantity": 9}, {"size": "L", "quantity": 11}, {"size": "XL", "quantity": 8}] },
         { "color": "gray", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
-	{ "color": "white", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
+        { "color": "white", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] }
       ],
-      "category": "PANTALONES"
+      "category": "PANTALONES",
+      "description": "Combina estilo y comodidad con este moderno pantalón deportivo. Con una silueta amplia y relajada, este pantalón ofrece libertad de movimiento y un ajuste cómodo. Perfecto tanto para entrenamientos intensos como para un look casual, este pantalón te brinda la versatilidad que necesitas en tu guardarropa deportivo."
     },
    {
       "name": "BUZO OVERSIZE",
@@ -47,9 +63,10 @@
         { "color": "pink", "sizeAndQuantity": [{"size": "S", "quantity": 500}, {"size": "M", "quantity": 500}, {"size": "L", "quantity": 500}, {"size": "XL", "quantity": 500}] },
         { "color": "yellow", "sizeAndQuantity": [{"size": "S", "quantity": 6}, {"size": "M", "quantity": 9}, {"size": "L", "quantity": 11}, {"size": "XL", "quantity": 8}] },
         { "color": "gray", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
-	{ "color": "white", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
+        { "color": "white", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] }
       ],
-      "category": "BUZOS"
+      "category": "BUZOS",
+      "description": "Experimenta la comodidad y el estilo relajado con este moderno buzo. Su diseño holgado y suave tejido te mantienen cálido y cómodo en todo momento. Perfecto para lucir un estilo urbano y relajado, este buzo es una adición versátil a tu colección de ropa casual, brindando una sensación de calidez y confort en cada uso."
     },
    {
       "name": "PANTALON BABUCHA",
@@ -60,9 +77,10 @@
         { "color": "pink", "sizeAndQuantity": [{"size": "S", "quantity": 500}, {"size": "M", "quantity": 500}, {"size": "L", "quantity": 500}, {"size": "XL", "quantity": 500}] },
         { "color": "yellow", "sizeAndQuantity": [{"size": "S", "quantity": 6}, {"size": "M", "quantity": 9}, {"size": "L", "quantity": 11}, {"size": "XL", "quantity": 8}] },
         { "color": "gray", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
-	{ "color": "white", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
+        { "color": "white", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] }
       ],
-      "category": "PANTALONES"
+      "category": "PANTALONES",
+      "description": "Una combinación perfecta de comodidad y estilo, este pantalón te brinda la libertad de movimiento que necesitas para tu día a día. Con un diseño amplio y relajado, este pantalón es ideal para un look casual y moderno. Su suave tejido y ajuste cómodo lo convierten en una opción versátil para cualquier ocasión, ya sea en casa o en la calle."
     },
    {
       "name": "TOP DEPORTIVO LADY",
@@ -73,9 +91,10 @@
         { "color": "orange", "sizeAndQuantity": [{"size": "S", "quantity": 500}, {"size": "M", "quantity": 500}, {"size": "L", "quantity": 500}, {"size": "XL", "quantity": 500}] },
         { "color": "black", "sizeAndQuantity": [{"size": "S", "quantity": 6}, {"size": "M", "quantity": 9}, {"size": "L", "quantity": 11}, {"size": "XL", "quantity": 8}] },
         { "color": "gray", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
-	{ "color": "white", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
+        { "color": "white", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] }
       ],
-      "category": "TOPS"
+      "category": "TOPS",
+      "description": "Logra un equilibrio perfecto entre estilo y funcionalidad con este top deportivo de alta calidad. Diseñado para brindar comodidad y soporte durante tus entrenamientos, este top se adapta perfectamente a tu cuerpo y te mantiene fresca y cómoda en todo momento. Ideal para actividades de alto rendimiento o para lucir un estilo deportivo elegante, este top es una pieza imprescindible en tu colección deportiva."
     },
    {
       "name": "TOP COMFORT LADY",
@@ -86,9 +105,10 @@
         { "color": "orange", "sizeAndQuantity": [{"size": "S", "quantity": 500}, {"size": "M", "quantity": 500}, {"size": "L", "quantity": 500}, {"size": "XL", "quantity": 500}] },
         { "color": "black", "sizeAndQuantity": [{"size": "S", "quantity": 6}, {"size": "M", "quantity": 9}, {"size": "L", "quantity": 11}, {"size": "XL", "quantity": 8}] },
         { "color": "gray", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
-	    { "color": "white", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
+        { "color": "white", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] }
       ],
-      "category": "TOPS"
+      "category": "TOPS",
+      "description": "Disfruta de una comodidad excepcional con este top diseñado para brindar suavidad y soporte durante tus actividades diarias. Confeccionado con materiales de alta calidad y un ajuste perfecto, este top te mantiene fresca y cómoda en todo momento. Ya sea para un día de ejercicio intenso o para relajarte en casa, este top te brinda la sensación perfecta de comodidad y tranquilidad."
     },
    {
       "name": "TOP PRIMAVERA FIT",
@@ -99,9 +119,10 @@
         { "color": "orange", "sizeAndQuantity": [{"size": "S", "quantity": 500}, {"size": "M", "quantity": 500}, {"size": "L", "quantity": 500}, {"size": "XL", "quantity": 500}] },
         { "color": "black", "sizeAndQuantity": [{"size": "S", "quantity": 6}, {"size": "M", "quantity": 9}, {"size": "L", "quantity": 11}, {"size": "XL", "quantity": 8}] },
         { "color": "pink", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
-	    { "color": "purple", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
+        { "color": "purple", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] }
       ],
-      "category": "TOPS"
+      "category": "TOPS",
+      "description": "Disfruta de la frescura y el estilo de la temporada con este top diseñado para brindar comodidad y elegancia. Confeccionado con materiales de alta calidad y un ajuste perfecto, este top te mantiene fresca y con estilo en cualquier ocasión. Ya sea para un día de ejercicio o para disfrutar de un paseo al aire libre, este top te brinda la combinación perfecta de comodidad y moda para la primavera."
     },
     {
       "name": "BIKER CORTO LINEA VITALS",
@@ -112,9 +133,10 @@
         { "color": "orange", "sizeAndQuantity": [{"size": "S", "quantity": 500}, {"size": "M", "quantity": 500}, {"size": "L", "quantity": 500}, {"size": "XL", "quantity": 500}] },
         { "color": "black", "sizeAndQuantity": [{"size": "S", "quantity": 6}, {"size": "M", "quantity": 9}, {"size": "L", "quantity": 11}, {"size": "XL", "quantity": 8}] },
         { "color": "pink", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
-	    { "color": "purple", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
+        { "color": "purple", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] }
       ],
-      "category": "BIKERS"
+      "category": "BIKERS",
+      "description": "Experimenta la comodidad y el estilo con este biker corto diseñado para brindar un ajuste perfecto y una sensación de suavidad durante tus entrenamientos. Confeccionado con materiales de alta calidad y una atención meticulosa a los detalles, este biker te brinda el soporte y la comodidad necesarios para realizar tus actividades con confianza y estilo. Perfecto para actividades deportivas intensas o para lucir un look deportivo moderno en tu día a día."
     },
     {
       "name": "REMERA DEPORTIVA NEW/LINE",
@@ -125,9 +147,10 @@
         { "color": "green", "sizeAndQuantity": [{"size": "S", "quantity": 500}, {"size": "M", "quantity": 500}, {"size": "L", "quantity": 500}, {"size": "XL", "quantity": 500}] },
         { "color": "black", "sizeAndQuantity": [{"size": "S", "quantity": 6}, {"size": "M", "quantity": 9}, {"size": "L", "quantity": 11}, {"size": "XL", "quantity": 8}] },
         { "color": "red", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
-	    { "color": "gray", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
+        { "color": "gray", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] }
       ],
-      "category": "REMERAS"
+      "category": "REMERAS",
+      "description": "Remera Deportiva New/Line: Logra un equilibrio perfecto entre estilo y rendimiento con esta remera deportiva de alta calidad. Diseñada para brindar comodidad y transpirabilidad durante tus entrenamientos, esta remera te mantiene fresca y con estilo en cualquier situación. Confeccionada con materiales de primera calidad y un ajuste cómodo, esta remera es ideal para actividades deportivas intensas o para lucir un look deportivo elegante en tu día a día."
     },
 
     {
@@ -139,12 +162,12 @@
         { "color": "green", "sizeAndQuantity": [{"size": "S", "quantity": 500}, {"size": "M", "quantity": 500}, {"size": "L", "quantity": 500}, {"size": "XL", "quantity": 500}] },
         { "color": "black", "sizeAndQuantity": [{"size": "S", "quantity": 6}, {"size": "M", "quantity": 9}, {"size": "L", "quantity": 11}, {"size": "XL", "quantity": 8}] },
         { "color": "red", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
-	    { "color": "gray", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
+        { "color": "gray", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] }
       ],
-      "category": "MUSCULOSAS"
+      "category": "MUSCULOSAS",
+      "description": "Experimenta la frescura y la comodidad durante tus entrenamientos con esta musculosa de alta calidad. Diseñada para brindar transpirabilidad y libertad de movimiento, esta musculosa te mantiene seca y fresca en cualquier situación. Confeccionada con materiales de primera calidad y un ajuste cómodo, esta musculosa es ideal para actividades deportivas intensas o para disfrutar de un look deportivo moderno y elegante en tu día a día."
     },
-
-    {
+{
       "name": "MUSCULOSA RUNNING",
       "image": "https://www.ladyfit.com.ar/images/catalogo/mujer/musculosas/running-2.jpg",
       "price": 1,
@@ -153,9 +176,10 @@
         { "color": "green", "sizeAndQuantity": [{"size": "S", "quantity": 500}, {"size": "M", "quantity": 500}, {"size": "L", "quantity": 500}, {"size": "XL", "quantity": 500}] },
         { "color": "black", "sizeAndQuantity": [{"size": "S", "quantity": 6}, {"size": "M", "quantity": 9}, {"size": "L", "quantity": 11}, {"size": "XL", "quantity": 8}] },
         { "color": "red", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
-	    { "color": "gray", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
+        { "color": "gray", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] }
       ],
-      "category": "MUSCULOSAS"
+      "category": "MUSCULOSAS",
+      "description": "Supera tus límites y alcanza tus metas con esta musculosa diseñada para brindar comodidad y rendimiento durante tus carreras. Confeccionada con materiales transpirables de alta calidad y un ajuste ergonómico, esta musculosa te mantiene fresco y seco durante tus sesiones de running. Ya sea para sprints intensos o para largas distancias, esta musculosa te brinda el soporte y la comodidad necesarios para superar cualquier desafío en tu camino hacia la meta."
     },
     {
       "name": "MUSCULOSA HOOP",
@@ -166,12 +190,95 @@
         { "color": "green", "sizeAndQuantity": [{"size": "S", "quantity": 500}, {"size": "M", "quantity": 500}, {"size": "L", "quantity": 500}, {"size": "XL", "quantity": 500}] },
         { "color": "black", "sizeAndQuantity": [{"size": "S", "quantity": 6}, {"size": "M", "quantity": 9}, {"size": "L", "quantity": 11}, {"size": "XL", "quantity": 8}] },
         { "color": "pink", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
-	    { "color": "gray", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] },
+        { "color": "gray", "sizeAndQuantity": [{"size": "S", "quantity": 4}, {"size": "M", "quantity": 7}, {"size": "L", "quantity": 9}, {"size": "XL", "quantity": 6}] }
       ],
-      "category": "MUSCULOSAS"
+      "category": "MUSCULOSAS",
+      "description": "Eleva tu estilo deportivo con esta musculosa elegante y funcional. Diseñada para brindar comodidad y estilo, esta musculosa presenta un diseño moderno y materiales de alta calidad para un ajuste perfecto. Ya sea para entrenamientos intensos o para lucir un look casual y deportivo en tu día a día, esta musculosa te proporciona la comodidad y el soporte necesarios para sentirte seguro y a la moda en cualquier situación."
     },
 
+{
+        "name": "TOP AILYKE",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_944171-MLA54942069643_042023-F.webp",
+        "description": "Top Deportivo Ailyke con Recortes a Contratono: Comodidad y estilo en uno. Perfecto para actividades deportivas y uso casual durante todo el año. Costuras reforzadas, suave y llamativo.",
+        "price": 14600,
+        "priceOnSale": 0,
+        "unitsSold": 97,
+        "stock": [
+            { "color": "red", "sizeAndQuantity": [{ "size": "S", "quantity": 105 }, { "size": "M", "quantity": 108 }, { "size": "L", "quantity": 1010 }, { "size": "XL", "quantity": 107 }] },
+            { "color": "blue", "sizeAndQuantity": [{ "size": "S", "quantity": 106 }, { "size": "M", "quantity": 109 }, { "size": "L", "quantity": 1011 }, { "size": "XL", "quantity": 108 }] },
+            { "color": "gray", "sizeAndQuantity": [{ "size": "S", "quantity": 104 }, { "size": "M", "quantity": 107 }, { "size": "L", "quantity": 109 }, { "size": "XL", "quantity": 106 }] }
+        ],
+        "category": "TOPS"
+    },
+    {
+        "name": "TOP SHADOW",
+        "image": "https://www.indy.com.ar/cdn/shop/files/top-roxy-fitness-keep-loving-azul-indy.jpg?v=1691623508",
+        "description": "Top Shadow Deportivo Roxy Keep Loving: Comodidad y estilo en un diseño vibrante. Fabricado en lycra y poliéster-elastano (87% / 13%). Cuenta con elástico debajo del busto para un ajuste seguro y guía de talles estampada. ¡Añade un toque deportivo a tu look!.",
+        "price": 7900,
+        "priceOnSale": 7000,
+        "unitsSold": 33,
+        "stock": [
+            { "color": "red", "sizeAndQuantity": [{ "size": "S", "quantity": 105 }, { "size": "M", "quantity": 108 }, { "size": "L", "quantity": 1010 }, { "size": "XL", "quantity": 107 }] },
+            { "color": "blue", "sizeAndQuantity": [{ "size": "S", "quantity": 106 }, { "size": "M", "quantity": 109 }, { "size": "L", "quantity": 1011 }, { "size": "XL", "quantity": 108 }] },
+            { "color": "gray", "sizeAndQuantity": [{ "size": "S", "quantity": 104 }, { "size": "M", "quantity": 107 }, { "size": "L", "quantity": 109 }, { "size": "XL", "quantity": 106 }] }
+        ],
 
-
-
+        "category": "TOPS"
+    },
+{
+        "name": "BIKINI ALLBLACK",
+        "image": "https://www.sds.com.au/dw/image/v2/BCBZ_PRD/on/demandware.static/-/Sites-bbg-master-catalog/default/dw866007b5/images/hi-res/URJX303039-KVJ0-2.jpg?sw=460&sh=575",
+        "description": "Con un diseño atemporal y detalles impecables, esta bikini te hará destacar en la playa o la piscina. Su color negro clásico es sinónimo de sofisticación, y su tejido de alta calidad se ajusta como un sueño. Sumérgete en la belleza y confianza que solo la Bikini fit puede brindarte.",
+        "price": 9400,
+        "priceOnSale": 0,
+        "unitsSold": 30,
+        "stock": [
+            { "color": "red", "sizeAndQuantity": [{ "size": "S", "quantity": 105 }, { "size": "M", "quantity": 108 }, { "size": "L", "quantity": 110 }, { "size": "XL", "quantity": 107 }] },
+            { "color": "blue", "sizeAndQuantity": [{ "size": "S", "quantity": 106 }, { "size": "M", "quantity": 109 }, { "size": "L", "quantity": 1011 }, { "size": "XL", "quantity": 108 }] },
+            { "color": "gray", "sizeAndQuantity": [{ "size": "S", "quantity": 104 }, { "size": "M", "quantity": 107 }, { "size": "L", "quantity": 109 }, { "size": "XL", "quantity": 106 }] }
+        ],
+        "category": "BIKINIS Y ENTERIZAS"
+    },
+{
+        "name": "ENTERIZA DIVA",
+        "image": "https://moeva.com/cdn/shop/products/danila-blacknude-square-neck-swimsuit-with-colorblocks-502892_720x.jpg?v=1682514839",
+        "description": "Con un diseño atemporal y detalles impecables, esta bikini te hará destacar en la playa o la piscina. Su color negro clásico es sinónimo de sofisticación, y su tejido de alta calidad se ajusta como un sueño. Sumérgete en la belleza y confianza que solo la Bikini fit puede brindarte.",
+        "price": 9400,
+        "priceOnSale": 0,
+        "unitsSold": 30,
+        "stock": [
+            { "color": "yellow", "sizeAndQuantity": [{ "size": "S", "quantity": 105 }, { "size": "M", "quantity": 108 }, { "size": "L", "quantity": 110 }, { "size": "XL", "quantity": 107 }] },
+            { "color": "brown", "sizeAndQuantity": [{ "size": "S", "quantity": 106 }, { "size": "M", "quantity": 109 }, { "size": "L", "quantity": 1011 }, { "size": "XL", "quantity": 108 }] },
+            { "color": "gray", "sizeAndQuantity": [{ "size": "S", "quantity": 104 }, { "size": "M", "quantity": 107 }, { "size": "L", "quantity": 109 }, { "size": "XL", "quantity": 106 }] }
+        ],
+        "category": "BIKINIS Y ENTERIZAS"
+    },
+    {
+        "name": "ENTERIZA DAMA",
+        "image": "https://img01.ztat.net/article/spp-media-p1/344633d3ac174207bfa1a679b0b03259/1227e9ef2a174fac847ee993a601b37e.jpg?imwidth=1800",
+        "description": "Con un diseño atemporal y detalles impecables, esta bikini te hará destacar en la playa o la piscina. Su color negro clásico es sinónimo de sofisticación, y su tejido de alta calidad se ajusta como un sueño. Sumérgete en la belleza y confianza que solo la Bikini fit puede brindarte.",
+        "price": 9400,
+        "priceOnSale": 0,
+        "unitsSold": 30,
+        "stock": [
+            { "color": "yellow", "sizeAndQuantity": [{ "size": "S", "quantity": 105 }, { "size": "M", "quantity": 108 }, { "size": "L", "quantity": 110 }, { "size": "XL", "quantity": 107 }] },
+            { "color": "brown", "sizeAndQuantity": [{ "size": "S", "quantity": 106 }, { "size": "M", "quantity": 109 }, { "size": "L", "quantity": 1011 }, { "size": "XL", "quantity": 108 }] },
+            { "color": "gray", "sizeAndQuantity": [{ "size": "S", "quantity": 104 }, { "size": "M", "quantity": 107 }, { "size": "L", "quantity": 109 }, { "size": "XL", "quantity": 106 }] }
+        ],
+        "category": "BIKINIS Y ENTERIZAS"
+    },
+    {
+        "name": "TOP BASSET ACQUA",
+        "image": "https://acdn.mitiendanube.com/stores/001/312/744/products/seg-basset-31-de-enero77061-4d5e86e8b74cc94f0616443293036128-640-0-e17bc236762c6276c216693107732221-1024-1024.webp",
+        "description": "Domina tu entrenamiento con el Top Acqua: soporte y estilo en uno. Espalda cruzada, compresión alta, y tejido que elimina la humedad para tu comodidad. Hecho de 85% poliamida y 15% elastano. Prepárate para superarte.",
+        "price": 8500,
+        "priceOnSale": 0,
+        "unitsSold": 80,
+        "stock": [
+            { "color": "red", "sizeAndQuantity": [{ "size": "S", "quantity": 105 }, { "size": "M", "quantity": 108 }, { "size": "L", "quantity": 1010 }, { "size": "XL", "quantity": 107 }] },
+            { "color": "blue", "sizeAndQuantity": [{ "size": "S", "quantity": 106 }, { "size": "M", "quantity": 109 }, { "size": "L", "quantity": 1011 }, { "size": "XL", "quantity": 108 }] },
+            { "color": "gray", "sizeAndQuantity": [{ "size": "S", "quantity": 104 }, { "size": "M", "quantity": 107 }, { "size": "L", "quantity": 109 }, { "size": "XL", "quantity": 106 }] }
+        ],
+        "category": "TOPS"
+    },
 ]
