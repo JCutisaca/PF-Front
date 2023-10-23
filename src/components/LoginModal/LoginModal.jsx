@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
 import "./loginModal.css";
 import ButtonTertiary from "../ButtonTertiary/ButtonTertiary";
 import getCart from "../../redux/Actions/ShoppingCart/getCart";
+import FacebookAuth from "../FacebookAuth/FacebookAuth";
 
 //Enviar a una variable de entorno!!!!!!!!!!!!!!!!!!!!!!!!!!!
 const clientId =
@@ -136,6 +137,12 @@ const LoginModal = (props) => {
         </Divider>
         <Form.Item>
           <GoogleAuth onGoogleLoginSuccess={handleGoogleLoginSuccess} />
+        </Form.Item>
+        <Divider orientation="left" style="">
+          Facebook
+        </Divider>
+        <Form.Item>
+          <FacebookAuth/>
         </Form.Item>
       </Form>
     </Modal>
