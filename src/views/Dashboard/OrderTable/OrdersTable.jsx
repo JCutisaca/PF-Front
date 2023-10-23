@@ -74,8 +74,7 @@ const OrdersTable = () => {
       dataIndex: "",
       key: 3,
       filters: emailFilters,
-      filterSearch: true,
-      onFilter: (value, record) => record.User.email.indexOf(value) === 0,
+      onFilter: (value, record) => record.User?.email.indexOf(value) === 0,
       render: (cell) => <p>{cell?.User?.email}</p>,
     },
     {

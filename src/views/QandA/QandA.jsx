@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import LoginModal from "../../components/LoginModal/LoginModal";
 import "./QandA.css";
+import { useSelector } from "react-redux";
+import MenuBurger from "../../components/MenuBurger/MenuBurger";
 
 const QandA = () => {
   const [loginModalVisible, setLoginModalVisible] = useState(false);
-
+  const menuBurger = useSelector(state => state.menuBurger)
   const emailLink = () => {
     const email = "ladyfitlovers@gmail.com";
 
@@ -121,17 +123,18 @@ const QandA = () => {
   ];
   return (
     <div>
+      {menuBurger ? <MenuBurger></MenuBurger> : null}
       <h1>Preguntas frecuentes</h1>
       <div className="containerQA1">
         <div className="containerQA">
           <Collapse defaultActiveKey={["1"]} ghost items={data} />
         </div>
-        <div className="containerQA2">
+        {/* <div className="containerQA2">
           <img
             alt="imagen"
             src="https://res.cloudinary.com/dv7kzlqy6/image/upload/v1697483973/5219070_xs5tdt.jpg"
           ></img>
-        </div>
+        </div> */}
       </div>
       {loginModalVisible && (
         <LoginModal

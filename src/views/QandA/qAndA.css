@@ -4,6 +4,9 @@
     flex-direction: row;
     justify-content: space-around;
     height: auto;
+    margin-top: 40px;
+    background-image: url("https://res.cloudinary.com/dv7kzlqy6/image/upload/v1697483973/5219070_xs5tdt.jpg");
+    background-size: cover;
   }
   
   .containerQA {
@@ -12,8 +15,10 @@
     align-items: center;
     font-family: "poppins", sans-serif;
     color: #ba338a;
-    width: 50%;
-    padding: 32px 32px;
+    width: 60%;
+    background: rgba(246, 241, 245, 0.5);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
   }
 
   .containerQA p{
@@ -23,7 +28,6 @@
   }
 
   .containerQA2{
-    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,9 +37,13 @@
   }
   
   @media (max-width: 768px) {
+    .containerQA {
+      width: 80%;
+    }
     .containerQA1 {
       flex-direction: column;
       justify-content: center;
+      align-items: center;
     }
   
     .containerQA2 img {

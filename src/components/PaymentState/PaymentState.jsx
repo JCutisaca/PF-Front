@@ -6,6 +6,7 @@ import { ShoppingOutlined } from "@ant-design/icons";
 import postOrder from "../../redux/Actions/Order/postOrder";
 import cleanCart from "../../redux/Actions/ShoppingCart/cleanCart";
 import { NavLink } from "react-router-dom";
+import MenuBurger from "../MenuBurger/MenuBurger";
 
 const PaymentState = () => {
   const dispatch = useDispatch();
@@ -21,6 +22,7 @@ const PaymentState = () => {
     .reduce((acc, cur) => acc + cur, 0);
   const mpId = parsedData?.payment_id;
   const accessToken = useSelector((state) => state.accessToken);
+  const menuBurger = useSelector((state) => state.menuBurger);
 
   const shippingCost = useSelector((state) => state.shippingCost);
   const shippingType = useSelector((state) => state.shippingType);
@@ -54,9 +56,10 @@ const PaymentState = () => {
 
   const renderSuccessCard = () => (
     <Card>
+      {menuBurger ? <MenuBurger/> : null}
       <div
         style={{
-          height: "60vh",
+          height: "70vh",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -85,9 +88,10 @@ const PaymentState = () => {
 
   const renderErrorCard = () => (
     <Card>
+      {menuBurger ? <MenuBurger/> : null}
       <div
         style={{
-          height: "60vh",
+          height: "70vh",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
