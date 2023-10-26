@@ -201,33 +201,34 @@ const reducer = (state = initialState, action) => {
         ...state,
         allProducts: filteredSize,
       };
-      case ORDER:
-  return {
-    ...state,
-    allProducts: state.allProducts.sort((a, b) => {
-      if (action.payload === "A") {
-        if (a.priceOnSale && b.priceOnSale) {
-          return a.priceOnSale - b.priceOnSale;
-        } else if (a.priceOnSale) {
-          return -1;
-        } else if (b.priceOnSale) {
-          return 1;
-        } else {
-          return a.price - b.price;
-        }
-      } else {
-        if (a.priceOnSale && b.priceOnSale) {
-          return b.priceOnSale - a.priceOnSale;
-        } else if (a.priceOnSale) {
-          return 1;
-        } else if (b.priceOnSale) {
-          return -1;
-        } else {
-          return b.price - a.price;
-        }
-      }
-    }),
-  };
+    case ORDER:
+      return {
+        ...state,
+        allProducts: state.allProducts.sort((a, b) => {
+          if (action.payload === "A") {
+            if (a.priceOnSale && b.priceOnSale) {
+              return a.priceOnSale - b.priceOnSale;
+            } else if(a.priceOnSale && b.price) {
+              return a.priceOnSale - b.price;
+            }else if(a.price && b.priceOnSale) {
+              return a.price - b.priceOnSale;
+            }else{
+              return a.price - b.price;
+            }
+          } else {
+            if (a.priceOnSale && b.priceOnSale) {
+              return b.priceOnSale - a.priceOnSale;
+            } else if(b.priceOnSale && a.price) {
+              return b.priceOnSale - a.price;
+            } else if(b.price && a.priceOnSale) {
+              return b.price - a.priceOnSale;
+            } else {
+              return b.price - a.price;
+            }
+          }
+        }),
+      };
+      ;
     case GET_CATEGORIES:
       return {
         ...state,
