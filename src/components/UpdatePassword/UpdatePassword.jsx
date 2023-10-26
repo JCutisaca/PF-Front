@@ -5,12 +5,11 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import updateUser from "../../redux/Actions/User/updateUser";
 import style from "./UpdatePassword.module.css"
-import resetPassword from "../../redux/Actions/User/resetpassword";
+import resetPassword from '../../redux/Actions/User/resetPassword'
 import { useNavigate } from "react-router-dom";
 
 const UpdatePassword = ({onClose, pivotbander, email}) => {
   const navigate = useNavigate()
-  console.log(email);
   const accessToken = useSelector((state) => state.accessToken);
   const infouser = useSelector((state) => state.user)
   const id = infouser.id
