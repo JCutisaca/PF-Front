@@ -18,6 +18,7 @@ import {
   FILT_BY_COLOR,
   FILT_BY_SIZE,
   SAVE_FILTERS,
+  ORDER,
   //category
   GET_CATEGORIES,
   POST_CATEGORY,
@@ -71,6 +72,7 @@ const initialState = {
     selectCategory: "",
     selectColor: "",
     selectSize: "",
+    order: "OR",
   },
   //cart
   cart: [],
@@ -199,6 +201,33 @@ const reducer = (state = initialState, action) => {
         ...state,
         allProducts: filteredSize,
       };
+      case ORDER:
+  return {
+    ...state,
+    allProducts: state.allProducts.sort((a, b) => {
+      if (action.payload === "A") {
+        if (a.priceOnSale && b.priceOnSale) {
+          return a.priceOnSale - b.priceOnSale;
+        } else if (a.priceOnSale) {
+          return -1;
+        } else if (b.priceOnSale) {
+          return 1;
+        } else {
+          return a.price - b.price;
+        }
+      } else {
+        if (a.priceOnSale && b.priceOnSale) {
+          return b.priceOnSale - a.priceOnSale;
+        } else if (a.priceOnSale) {
+          return 1;
+        } else if (b.priceOnSale) {
+          return -1;
+        } else {
+          return b.price - a.price;
+        }
+      }
+    }),
+  };
     case GET_CATEGORIES:
       return {
         ...state,
