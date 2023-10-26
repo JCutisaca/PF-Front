@@ -203,7 +203,8 @@ console.log("desoyes del if", userResponse);
           justifyContent: "center",
           textAlign: "center",
           borderColor: "#ba338a",
-          marginTop: "25vh"
+          marginTop: "25vh",
+
         }}
       >
         <Box
@@ -215,6 +216,7 @@ console.log("desoyes del if", userResponse);
             borderRadius: 5,
             marginBottom:"10vh",
             borderColor: "#ba338a",
+            background: "white",
           }}
         >
           <div className="div-render-chat"
@@ -239,7 +241,7 @@ console.log("desoyes del if", userResponse);
       <div>
         <Avatar 
           alt="Bot" 
-          src="https://cdn.pixabay.com/photo/2015/06/12/18/31/cute-807306_1280.png"
+          src="/img/ladyBot.png"
         />
       </div>
     ) : null}
