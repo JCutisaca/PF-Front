@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Card, Space, Typography, Avatar, Row, Col } from "antd";
 import {
-  EditOutlined 
+  EditOutlined
 } from "@ant-design/icons";
 import AvatarEdit from "react-avatar-edit"
 import EditPhotoProfile from "../EditPhotoProfile/EditPhotoProfile";
@@ -20,7 +20,7 @@ const Profile = () => {
   return (
     <div className={style.containerProfiler}>
       <Card
-        
+
         className={style.ant}
 
       >
@@ -35,11 +35,14 @@ const Profile = () => {
               <EditOutlined onClick={openModal} className={style.editProfile} />
             </div>
           ) : (
-            <Avatar
-              src={user}
-
-              style={{ margin: "12px 12px", height: "17vh", width: "17vh", }}
-            />
+            <div className={style.containerAvatarEdit}>
+              <Avatar
+                src={user}
+                style={{ margin: "12px 12px", height: "17vh", width: "17vh", }}
+                onClick={openModal}
+              />
+              <EditOutlined onClick={openModal} className={style.editProfile} />
+            </div>
           )}
           <Space direction="vertical" align="start">
             <Row>
@@ -103,9 +106,10 @@ const Profile = () => {
                   className={style.dataaddres}
                   style={{ margin: "12px 12px" }}
                 >
-                  {infouser.address
-                    ? `Calle: ${infouser?.address.calle} Número: ${infouser?.address.numero} Dpto: ${infouser?.address.dpto} Entre Calles: ${infouser?.address.entreCalles} ${infouser?.address.localidad} Provincia: ${infouser?.address.provincia} C.P: ${infouser?.address.codigoPostal}`
-                    : "No definido"}
+                  {infouser && infouser.address && infouser.address.calle
+                    ? `Calle: ${infouser.address.calle} Número: ${infouser.address.numero} Dpto: ${infouser.address.dpto} Entre Calles: ${infouser.address.entreCalles} ${infouser.address.localidad} Provincia: ${infouser.address.provincia} C.P: ${infouser.address.codigoPostal}`
+                    : "No definido"
+                  }
                 </Text>
               </Col>
 
@@ -113,10 +117,10 @@ const Profile = () => {
           </Space>
         </Space>
       </Card>
-      <EditPhotoProfile 
-      visible={visible} 
-      onClose={() => setVisible(false)}
-      idUser={infouser.id}
+      <EditPhotoProfile
+        visible={visible}
+        onClose={() => setVisible(false)}
+        idUser={infouser.id}
       />
     </div>
   );
