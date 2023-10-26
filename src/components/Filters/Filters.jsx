@@ -129,8 +129,8 @@ const Filters = () => {
 
   const orderOptions = [
     { value: "OR", label: "ORDEN" },
-    { value: "A", label: "Ascendente" },
-    { value: "D", label: "Descendente" },
+    { value: "A", label: "Menor Precio" },
+    { value: "D", label: "Mayor Precio" },
   ]
 
   const handleClick = () => {
