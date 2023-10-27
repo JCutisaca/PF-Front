@@ -119,7 +119,7 @@ const ChatBot = () => {
             </div>
           );
           break;
-        case "nformación sobre el stock":
+        case "información sobre el stock":
         case "informacion sobre el stock":
           botResponse = (
             <div>
@@ -462,13 +462,13 @@ const ChatBot = () => {
       <Box
         sx={{
           width: "100%",
-          // height: "auto",
+          height: "80%",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
           textAlign: "center",
-          borderColor: "#ba338a",
+          borderColor: "#ba338a"
           // marginTop: "25vh",
         }}
       >
@@ -476,19 +476,24 @@ const ChatBot = () => {
           sx={{
             width: "90%",
             // maxWidth: 800,
-            height:"90%",
+            height:"100%",
             p: 2,
             border: "1px inset #ccc",
             borderRadius: 5,
             marginBottom: "1vh",
             borderColor: "#ba338a",
             background: "white",
-            
+            overflow: "hidden",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            alignItems: "center",
+            position: "relative",
           }}
         >
           <Button
             size="small"
-            style={{ float: "right", color: "#ba338a" }}
+            style={{ float: "right", color: "#ba338a", position: "absolute", top: "10px", right: "10px" }}
             onClick={handleCloseChat}
           >
             <CloseOutlined />
@@ -496,7 +501,7 @@ const ChatBot = () => {
           <div
             className="div-render-chat"
             ref={chatContainerRef}
-            style={{ overflowY: "auto", marginBottom: "10px", width: "100%",}}
+            style={{ overflowY: "auto"}}
           >
             <div claaName="chat-messages" ref={chatContainerRef}>
               {messages.map((message, index) => (
@@ -557,8 +562,9 @@ const ChatBot = () => {
             <Button
               variant="contained"
               type="primary"
-              style={{ margin: "5px", backgroundColor: "#ba338a" }}
+              style={{ margin: "5px", backgroundColor: "#ba338a", }}
               onClick={() => handleUserMessage(inputText)}
+              
             >
               Enviar
             </Button>
