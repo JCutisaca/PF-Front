@@ -75,7 +75,7 @@ const initialState = {
     selectCategory: "",
     selectColor: "",
     selectSize: "",
-    order: "OR",
+    selectOrdered: ""
   },
   //cart
   cart: [],
@@ -209,10 +209,11 @@ const reducer = (state = initialState, action) => {
         allProducts: filteredSize,
       };
     case ORDER:
+      console.log(action.payload);
       return {
         ...state,
-        allProducts: state.allProducts.sort((a, b) => {
-          if (action.payload === "A") {
+        allProducts: action.payload !== "" || state.saveFilters.selectOrdered !== "" ? state.allProducts.sort((a, b) => {
+          if (state.saveFilters.selectOrdered === "A" || action.payload === "A") {
             if (a.priceOnSale && b.priceOnSale) {
               return a.priceOnSale - b.priceOnSale;
             } else if(a.priceOnSale && b.price) {
@@ -222,7 +223,7 @@ const reducer = (state = initialState, action) => {
             }else{
               return a.price - b.price;
             }
-          } else {
+          } else if (state.saveFilters.selectOrdered === "D" || action.payload === "D") {
             if (a.priceOnSale && b.priceOnSale) {
               return b.priceOnSale - a.priceOnSale;
             } else if(b.priceOnSale && a.price) {
@@ -233,7 +234,7 @@ const reducer = (state = initialState, action) => {
               return b.price - a.price;
             }
           }
-        }),
+        }) : state.savePivot.length > 0 ? state.savePivot : state.saveProducts,
       };
       ;
     case GET_CATEGORIES:
@@ -288,13 +289,15 @@ const reducer = (state = initialState, action) => {
       } else if (
         action.payload.selectCategory ||
         action.payload.selectColor ||
-        action.payload.selectSize
+        action.payload.selectSize ||
+        action.payload.selectOrdered
       ) {
         newSaveFilters = {
           ...newSaveFilters,
           selectCategory: action.payload.selectCategory,
           selectColor: action.payload.selectColor,
           selectSize: action.payload.selectSize,
+          selectOrdered: action.payload.selectOrdered,
         };
       }
 

@@ -10,23 +10,23 @@ import style from "./Filters.module.css";
 import { Select, Button } from "antd";
 import { ReloadOutlined } from "@ant-design/icons";
 import order from "../../redux/Actions/Filter/order";
-
+import { getColorName } from "../../utils/getColorName";
 
 const Filters = () => {
   const size = ["S", "M", "L", "XL"];
   const dispatch = useDispatch();
   const allProducts = useSelector((state) => state.allProducts);
   const filtersave = useSelector((state) => state.saveFilters);
-
-  // Cambiar de dos estados locales a un solo estado local
+  console.log(filtersave);
+  
   const [uniqueFilters, setUniqueFilters] = useState({
     category: [],
     color: [],
     selectCategory: "",
     selectColor: "",
     selectSize: "",
+    selectOrdered: "",
   });
-  const [ordered, setOrdered] = useState("OR")
 
   useEffect(() => {
     dispatch(setCurrentPage(1));
@@ -34,7 +34,8 @@ const Filters = () => {
     handleChangeCategory;
     handleChangeColor;
     handleSize;
-  }, [allProducts, uniqueFilters, ordered]);
+    handleOrder;
+  }, [allProducts, uniqueFilters]);
   useEffect(() => {
     if (uniqueFilters.selectCategory !== "") {
       dispatch(filtByCategory(uniqueFilters.selectCategory));
@@ -45,12 +46,15 @@ const Filters = () => {
     if (uniqueFilters.selectSize !== "") {
       dispatch(filtBySize(uniqueFilters.selectSize));
     }
-
+    if(uniqueFilters.selectOrdered !== "") {
+      dispatch(order(uniqueFilters.selectOrdered))
+    }
 
   }, [
     uniqueFilters.selectCategory,
     uniqueFilters.selectColor,
     uniqueFilters.selectSize,
+    uniqueFilters.selectOrdered 
   ]);
 
   useEffect(() => {
@@ -77,6 +81,7 @@ const Filters = () => {
         selectCategory: filtersave.selectCategory,
         selectColor: filtersave.selectColor,
         selectSize: filtersave.selectSize,
+        selectOrdered: filtersave.selectOrdered
       });
     }
   }, [allProducts]);
@@ -103,8 +108,10 @@ const Filters = () => {
   };
 
   const handleOrder = (value) => {
-    setOrdered(value)
-    dispatch(order(value))
+    setUniqueFilters({
+      ...uniqueFilters,
+      selectOrdered: value
+    })
   }
 
   const categoryOptions = [
@@ -115,8 +122,8 @@ const Filters = () => {
   ];
   const colorOptions = [
     { value: "", label: "COLOR" },
-    ...filtersave.color.map((categoria) => {
-      return { value: categoria, label: categoria };
+    ...filtersave.color.map((color) => {
+      return { value: color, label: getColorName(color)};
     })
   ];
 
@@ -128,9 +135,9 @@ const Filters = () => {
   ]
 
   const orderOptions = [
-    { value: "OR", label: "ORDEN" },
-    { value: "A", label: "Menor Precio" },
-    { value: "D", label: "Mayor Precio" },
+    { value: "", label: "PRECIO" },
+    { value: "A", label: "Menor a Mayor" },
+    { value: "D", label: "Mayor a Menor" },
   ]
 
   const handleClick = () => {
@@ -139,11 +146,10 @@ const Filters = () => {
       selectCategory: "TA",
       selectColor: "",
       selectSize: "",
+      selectOrdered: "",
     });
-    setOrdered("OR")
   };
-  console.log(uniqueFilters);
-  console.log(allProducts);
+ 
   return (
     <div className={style.containerFilter}>
       <div className={style.subcontainer}>
@@ -179,7 +185,7 @@ const Filters = () => {
         <div className={style.contenselect}>
           <Select
             defaultValue={"OR"}
-            value={ordered}
+            value={!uniqueFilters.selectOrdered ? "PRECIO" : uniqueFilters.selectOrdered}
             options={orderOptions}
             style={{ width: "100%" }}
             onChange={handleOrder}
