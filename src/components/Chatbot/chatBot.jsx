@@ -462,7 +462,7 @@ const ChatBot = () => {
       <Box
         sx={{
           width: "100%",
-          height: "60vh",
+          // height: "auto",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -496,7 +496,7 @@ const ChatBot = () => {
           <div
             className="div-render-chat"
             ref={chatContainerRef}
-            style={{ height: "500px", overflowY: "auto", marginBottom: "10px", width: "100%",}}
+            style={{ overflowY: "auto", marginBottom: "10px", width: "100%",}}
           >
             <div claaName="chat-messages" ref={chatContainerRef}>
               {messages.map((message, index) => (
@@ -505,7 +505,7 @@ const ChatBot = () => {
                   style={{
                     display: "flex",
                     justifyContent: message.isUser ? "flex-end" : "flex-start",
-                    marginBottom: "10px",
+                    // marginBottom: "10px",
                     textAlign: message.isUser ? "right" : "left",
                     // marginBottom: "10px",
                     // color: message.isUser ? "#ba338a" : "rgb(135 8 98)",

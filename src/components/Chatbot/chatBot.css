@@ -15,6 +15,9 @@
   opacity: 1;
   visibility: visible;
 }
+.div-render-chat{
+  max-height: 100%;
+}
 
 .chat-box {
   width: 80%;
@@ -58,7 +61,7 @@
   /* margin-top: 10px; */
 
   margin-left: 5px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   font-size: small;
 }
 
